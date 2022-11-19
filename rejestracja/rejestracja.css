@@ -2,6 +2,7 @@ body{
     background-image: url(../img/tlo.jpg);
     color: white;
     text-align: center;
+    background-size: 100%;
     font-family: Verdana;
 }
 #rejestracja
