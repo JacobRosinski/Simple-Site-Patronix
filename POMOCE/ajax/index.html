@@ -22,13 +22,44 @@
 				get_text_file('intro.htm', function(text, status){
 					if(status==200){
 						alert(text);
+						return text;
 					}
 				});
+				return "[-1][0][Not found.]";
 			}
+			
 		</script>
 	</head>
 	
 	<body>
+		<div style="display: none;" id="naglowek">£adowanie...</div>
+		<div id="zmienny"></div>
+		<div style="display: none;" id="stopka">£adowanie...</div>
 		<button onclick="getResponse(); ">Przyk³adowy klik</button>
+		
+		<script>
+			let x = document.getElementById("naglowek");
+			get_text_file('intro.htm', function(text, status){
+				if(status==200){
+					x.innerHTML = text;
+				}
+			});
+			let y = document.getElementById("stopka");
+			get_text_file('stopka.htm', function(text, status){
+				if(status==200){
+					y.innerHTML = text;
+				}
+			});
+			
+			window.setTimeout(function(){
+				x.style.display = "block";
+				y.style.display = "block";
+			}, 3000);
+			
+			let z = document.getElementById("zmienny");
+			window.setInterval(function(){
+				z.innerHTML += "#";
+			}, 1000);
+		</script>
 	</body>
 </html>
