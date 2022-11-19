@@ -7,22 +7,76 @@
     <title>Projekt</title>
 
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypty.js"></script>
 </head>
 
 <body>
 
     <nav>
 
-        <img src="img/home.png" alt="home" id="ikona">
+        <a href="index.html">
+        <img src="img/home.png" alt="home" id="ikona" onmouseover="dom()" onmouseleave="dom2()">
+        </a>
+
+        <div id="log"> 
+            <button>Rejestracja</button>
+            <button>Logowanie</button>
+        </div>
     
     </nav>
 
     <header>
 
         <h2>Witaj Użytkowniku w serwisie</h2>
-        <h1>Patronix</h1>
+        <p id="patronix">PATRONIX</p>
 
     </header>
 
+    <main>
+
+    <div id="historia">
+
+        <img src="img/it.jpg" alt="it" id="it">
+
+        <div id="opis">
+
+            <h1>Czemu Patronix?</h1>
+
+            Nasz zespół to grupa pasjonatów komputerów, oraz Patryka. Elektroniką zajmujemy się od 
+            1969 roku. <br> Nasze motto jest proste: "Tanio nie jest ale przynajmniej jako tako"
+
+            <br> <br>
+
+            Oprócz napraw sprzętowych zajmujemy się również świadczeniem usług informatycznych – od instalacji systemów operacyjnych (Microsoft Windows, Linux, Mac OS X, Android) i oprogramowania użytkowego, przez ich naprawę i optymalizację, po odzyskiwanie danych z nośników z uszkodzeniami logicznymi i sprzętowymi. Naprawiamy dyski twarde i pendrive’y, wykonujemy analizę nośników i odzyskiwanie danych ze wszystkich typów dysków, pamięci FLASH (peny, karty SD MS CF).
+
+        </div>
+
+        
+
+    </div>
+
+    <div id="zlecenia">
+
+        <p id="opis2">
+            Nie jesteśmy klasycznym serwisem komputerowym. <br> <br>
+             Jesteśmy jedną z największych firm serwisowych 
+             działających w Polsce, prawdopodobnie niewiele 
+             takich istnieje w Europie. 
+             Świadczymy usługi naprawy urządzeń elektronicznych w tym   
+             - zarówno tych stacjonarnych, 
+             jak również przenośnych, laptopów, tabletów, smartfonów.
+             <br> <br> Nie wszystkie serwisy komputerowe posiadają tak bogate wyposażenie i doświadczenie.</p>
+
+        <img src="img/serwisant.jpg" alt="serwisant" id="serwisant">
+        
+
+    </div> 
+
+</main> 
+
+
+    <footer>
+        ⒸZETA 2022
+    </footer>
 </body>
 </html>
