@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script>
+			function get_text_file(address_url, get_text_callback){
+				var xml_http = new XMLHttpRequest();
+				
+				xml_http.onreadystatechange = function(){
+					if (xml_http.readyState==4){
+						if ((xml_http.status==200) || (xml_http.status==0)){
+							get_text_callback(xml_http.responseText, xml_http.status);
+							xml_http.onreadystatechange = function(){};
+						}
+					}
+				}
+				
+				//xml_http.open('GET', 'http://test2.vectoss.pl/simple_text.txt');
+				xml_http.open('GET', address_url, true);
+				xml_http.send();
+			}
+			
+			function getResponse(){
+				get_text_file('intro.htm', function(text, status){
+					if(status==200){
+						alert(text);
+						return text;
+					}
+				});
+				return "[-1][0][Not found.]";
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		<div style="display: none;" id="naglowek">£adowanie...</div>
+		<div id="zmienny"></div>
+		<div style="display: none;" id="stopka">£adowanie...</div>
+		<button onclick="getResponse(); ">Przyk³adowy klik</button>
+		
+		<script>
+			let x = document.getElementById("naglowek");
+			get_text_file('intro.htm', function(text, status){
+				if(status==200){
+					x.innerHTML = text;
+				}
+			});
+			let y = document.getElementById("stopka");
+			get_text_file('stopka.htm', function(text, status){
+				if(status==200){
+					y.innerHTML = text;
+				}
+			});
+			
+			window.setTimeout(function(){
+				x.style.display = "block";
+				y.style.display = "block";
+			}, 3000);
+			
+			let z = document.getElementById("zmienny");
+			window.setInterval(function(){
+				z.innerHTML += "#";
+			}, 1000);
+		</script>
+	</body>
+</html>

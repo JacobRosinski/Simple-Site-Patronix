@@ -1,0 +1,66 @@
+<!-- To jest komentarz. -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tytu³ strony</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+		<meta name="Author" content="Edward Gierymski">
+		<meta name="Description" content="Strona o mnie">
+		<meta name="Keywords" content="Zainteresowania,osobiste">
+		<link rel="stylesheet" type="text/css" href="styles/trivia.css">
+		<script src="scripts/pierwszy.js"></script>
+	</head>
+	<body>
+		<header>
+			<iframe src="templates/main_header.htm"></iframe>
+		</header>
+		<section>
+			<table>
+				<tr>
+					<td>
+						<!-- Knefel (pol. Przycisk) -->
+						<div class="knefel" onclick="alert('Witam!')">
+							<img src="images/foto-ikona.png">
+							<br>
+							<div>Alert</div>
+						</div>
+						<!-- end Knefel -->
+					</td>
+					<td>
+						<!-- Knefel (pol. Przycisk) -->
+						<div class="knefel" onclick="main_content.src='http://www.interia.pl' ">
+							<img src="images/foto-ikona.png">
+							<br>
+							<div>Galeryjo</div>
+						</div>
+						<!-- end Knefel -->
+					</td>
+					<td>
+						<!-- Knefel (pol. Przycisk) -->
+						<div class="knefel" onclick="main_content.src='images/galeria/galeria.htm' ">
+							<img src="images/foto-ikona.png">
+							<br>
+							<div>Galeryjo</div>
+						</div>
+						<!-- end Knefel -->
+					</td>
+					<td>
+						<!-- Knefel (pol. Przycisk) -->
+						<div class="knefel" onclick="pobierzWiek();">
+							<img src="images/foto-ikona.png">
+							<br>
+							<div>Galeryjo</div>
+						</div>
+						<!-- end Knefel -->
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section >
+			<iframe style="height: 300px;" id="main_content" src="about:blank"></iframe>
+		</section>
+		<footer>
+			<iframe src="templates/main_footer.htm"></iframe>
+		</footer>
+	</body>
+</html>
