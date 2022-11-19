@@ -1,68 +1,31 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt</title>
-    <link rel="stylesheet" href="stylrejestracja.css">
-    <script src="skryptrej.js"></script>
-</head>
-<body>
-   <nav></nav>
-
-    <header>
-        <h1 id="tytul1">Jesteś tu nowy?</h1>  
-        <h1 id="tytul1">Nie ma problemu!</h1>
-        <h1 id="tytul1">Zarejestruj się:</h1>
-    </header> 
-
-    <main>
-        
-        <form action="" method="post">
-            <table cellpadding="10">
-                <tr>
-                    <td>
-                        <strong>E-mail: </strong><input type="email">
-                    </td>
-                        
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Hasło: </strong><input type="password" id="inputpass" onkeyup="return passwordChanged()"> 
-                        <img src="img/eyeclose.png" alt="ikonka" height="30px" width="30px" id="ikonka" onclick="haslomaslo()" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p><span id="strength">Podaj hasło</span></p>
-                    </td>
-                </tr>
-               <tr>
-                <td>
-                    <strong>Powtórz hasło: </strong><input type="password" id="powtorzpass">
-                    <img src="img/eyeclose.png" alt="ikonka2" height="30px" width="30px" id="ikonka2" onclick="haslomaslo2()" >
-                </td>
-               </tr>
-                <tr>
-                    <td>
-                        <strong>Imię: </strong><input type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Nazwisko: </strong><input type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong>Adres: </strong><input type="text">
-                    </td>
-                </tr>   
-            </table>
-        </form>
-        
-    </main>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projekt</title>
+        <link rel="stylesheet" href="rejestracja.css">
+    </head>
+    <body>
+        <div id="rejestracja">
+            <form action="rejestracja.php" method="post">
+                <h1>
+                    REJESTACJA
+                </h1>
+                <input type="email" name="mail" placeholder="E-mail"><b>*</b> <br>
+                <input type="password" name="password" placeholder="Hasło"><b>*</b>
+                <h2>
+                    DODATKOWE DANE
+                </h2>
+                <input type="text" name="imie" placeholder="Imie"> <br>
+                <input type="text" name="nazwisko" placeholder="Nazwisko"> <br>
+                <input type="text" name="adres" placeholder="Adres"> <br>
+                <input type="submit" class="myButton" value="REJESTRUJ">
+            </form>
+        </div>
+    </body>
 </html>
+=======
+>>>>>>> c5604640a6eb68e5f93f8a4dab8cf92687b981ca

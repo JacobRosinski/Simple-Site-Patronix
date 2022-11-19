@@ -1,0 +1,44 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<div style="background-color: red">Jeden</div>
+		<div style="background-color: green">Dwa</div>
+		<div style="background-color: blue">Trzy</div>
+		<div style="background-color: blue; width: 50%">Czwarty</div>
+		<div style="background-color: blue; width: 50px">Czwarty</div>
+		<span style="background-color: yellow">span1</span>
+		<span style="background-color: orange">span2</span>
+		
+		<style>
+			#contener{
+				width: 200px;
+				border: 2px solid black;
+			}
+		</style>
+		<div id="contener">
+			<div>jeden</div>
+		</div>
+		<script>
+			function dodajElement(in_nazwa){
+				var lista = document.getElementById("contener");
+				var element = document.createElement("DIV");
+				element.innerHTML = in_nazwa + 
+						"<span style='cursor: pointer; float: right' onclick='this.parentNode.remove()'>[X]</span>";
+				element.style.backgroundColor = "black";
+				element.style.color = "white";
+				element.style.margin = "2px";
+				element.style.padding = "2px";
+				lista.appendChild(element);
+			}
+			dodajElement("Kartofle");
+			dodajElement("Mleko");
+		</script>
+		<form onsubmit="return false;">
+			Podaj nazwê:
+			<input id="ele" type="text" placeholder="(wpisz nazwê artyku³u)">
+			<button onclick='dodajElement(ele.value)'>Dodaj</button>
+		</form>
+	</body>
+</html>

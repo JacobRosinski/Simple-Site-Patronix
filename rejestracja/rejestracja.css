@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/tlo-kopia.jpg);
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+}
+#rejestracja
+{
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+}
+input
+{
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+b
+{
+    color: red;
+}
+.myButton {
+    margin-top: 30px;
+	box-shadow: 3px 4px 0px 0px #000000;
+	background:linear-gradient(to bottom, #951fd9 5%, #241ed6 100%);
+	background-color:#951fd9;
+	border-radius:18px;
+	border:1px solid #951fd9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #241ed6;
+    font-weight: bold;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #241ed6 5%, #951fd9 100%);
+	background-color:#241ed6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
