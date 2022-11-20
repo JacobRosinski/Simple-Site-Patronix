@@ -9,12 +9,13 @@
     </head>
     <body>
         <div id="rejestracja">
-            <form action="rejestracja.php" method="post">
+            <form action="logowanie.php" method="post">
                 <h1>
                     LOGOWANIE
                 </h1>
                 <input type="email" name="mail" placeholder="E-mail"><b></b> <br>
                 <input type="password" name="password" placeholder="Hasło"><b></b><br>
+                <input type="hidden" name="function" value="sign-in"/>
                 <input type="submit" class="myButton" value="ZALOGUJ SIĘ">
             </form>
         </div>
