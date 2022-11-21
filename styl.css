@@ -30,6 +30,14 @@ nav{
     margin-top: 10px;
 }
 
+#ikona_alt{
+    filter: invert(100%);
+    height: 30px;
+    margin-top: 10px;
+
+    background-color: rgb(137, 47, 255);
+}
+
 #log{
     float: right;
 }
@@ -130,7 +138,7 @@ hr{
 main{
     margin-left: auto;
     margin-right: auto;
-    width: 90%;   
+    width: 1000px;   
 }
 
 footer{
@@ -144,7 +152,7 @@ footer{
 
 
 
-    width: 100%;
+    width: 99%;
     height: 50px;
     background-color: rgba(0, 0, 0, 20%);
 }
