@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style>
+			td{
+				background-color: rgba(255,0,0,0.2);
+				padding: 20px;
+			}
+			td[value="wersja"]{
+				color: white;
+			}
+			td[rog="lg"]{
+				border-radius: 20px 0px 0px 0px;
+			}
+			td[rog="rg"]{
+				border-radius: 0px 20px 0px 0px;
+			}
+			td[rog="ld"]{
+				border-radius: 0px 0px 20px 0px;
+			}
+			td[rog="rd"]{
+				border-radius: 0px 0px 0px 20px;
+			}
+			td:after{
+				content: attr(value);
+			}
+			td:before{
+				content: '***';
+			}
+		</style>
+	</head>
+	
+	<body>
+		<table>
+			<tr>
+				<td rog="lg" value="serek">XXX</td>
+				<td></td>
+				<td rog="rg" value="wersja"></td>
+			</tr>
+			<tr>
+				<td value="polska"></td>
+				<td rog="rg"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
