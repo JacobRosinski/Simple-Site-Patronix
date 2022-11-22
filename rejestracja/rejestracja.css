@@ -5,6 +5,14 @@ body{
     background-size: 100%;
     font-family: Verdana;
 }
+
+@font-face {
+    font-family: caviar;
+    src: url(../assets/CaviarDreams.ttf);
+}
+
+
+
 #rejestracja
 {
     border-radius: 20px;
