@@ -3,12 +3,12 @@
 -------------*/
 @font-face {
     font-family: wampir;
-    src: url(../VampireWars.ttf);
+    src: url(./assets/VampireWars.ttf);
 }
 
 @font-face {
 	font-family: caviar;
-	src: url(../CaviarDreams.ttf);
+	src: url(./assets/CaviarDreams.ttf);
 }
 *{
 	margin: 0;
@@ -425,7 +425,7 @@ footer{
 	align-items: center;
 	text-align: center;
 	color: #fff;
-	background-color: #905ba0;
+	background-color: #2d0838;
 	padding: 30px 0;
 }
 

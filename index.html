@@ -1,89 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patronix - serwis komputerowy</title>
 
-    <link rel="stylesheet" href="styl.css">
-    <script src="skrypty.js"></script>
+	<link href="/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
 
-    <nav>
+	<header>
+		<a href="/index.html"><img src="../img/Patronix-logo.png" alt="logo" id="logo"></a>
 
-        <a href="index.html">
-        <img src="img/home.png" alt="home" id="ikona" onmouseover="dom()" onmouseleave="dom2()">
-        </a>
-
-        <a href="./altindex/index.html">
-            <img src="img/home.png" alt="home" id="ikona_alt" onmouseover="dom_alt()" onmouseleave="dom2_alt()">
-            </a>
-
-        <div id="log">
-            <a href="rejestracja/index.html"> 
-            <button>Rejestracja</button></a>
-
-            <a href="logowanie/index.html">
-            <button>Logowanie</button></a>
-        </div>
-    
-    </nav>
-
-    <header>
-
-        <h2>Witaj Użytkowniku w serwisie</h2>
-        <p id="patronix">PATRONIX</p>
-
-    </header>
-
-    <main>
-
-    <div id="historia">
-
-        <img src="img/it.jpg" alt="it" id="it">
-
-        <div id="opis">
-
-            <h1>Czemu Patronix?</h1>
-
-            Nasz zespół to grupa pasjonatów komputerów, oraz Patryka. Elektroniką zajmujemy się od 
-            1969 roku. <br> Nasze motto jest proste: "Tanio nie jest ale przynajmniej jako tako"
-
-            <br> <br>
-
-            Oprócz napraw sprzętowych zajmujemy się również świadczeniem usług informatycznych – od instalacji systemów operacyjnych (Microsoft Windows, Linux, Mac OS X, Android) i oprogramowania użytkowego, przez ich naprawę i optymalizację, po odzyskiwanie danych z nośników z uszkodzeniami logicznymi i sprzętowymi. Naprawiamy dyski twarde i pendrive’y, wykonujemy analizę nośników i odzyskiwanie danych ze wszystkich typów dysków, pamięci FLASH (peny, karty SD MS CF).
-
-        </div>
-
-        
-
-    </div>
-
-    <div id="zlecenia">
-
-        <p id="opis2">
-            Nie jesteśmy klasycznym serwisem komputerowym. <br> <br>
-             Jesteśmy jedną z największych firm serwisowych 
-             działających w Polsce, prawdopodobnie niewiele 
-             takich istnieje w Europie. 
-             Świadczymy usługi naprawy urządzeń elektronicznych w tym   
-             - zarówno tych stacjonarnych, 
-             jak również przenośnych, laptopów, tabletów, smartfonów.
-             <br> <br> Nie wszystkie serwisy komputerowe posiadają tak bogate wyposażenie i doświadczenie.</p>
-
-        <img src="img/serwisant.jpg" alt="serwisant" id="serwisant">
-        
-
-    </div> 
-
-</main> 
+			<nav>
+				<li><a href="./rejestracja/index.html">Rejestracja</a></li>
+				<li><a href="./logowanie/index.html">Logowanie</a></li>
+			</nav>
+		
+	</header>
 
 
-    <footer>
-        ⒸZETA 2022
-    </footer>
+	<section class="hero">
+
+		<div class="background-image" style="background-image: url(../img/tlo.jpg);"></div>
+		<h3>witaj użytkowniku w serwisie</h3>
+		<h1 style="font-family: wampir; font-size: 400%;">PATRONIX</h1>
+		
+	</section>
+
+
+	<section class="our-work">
+		<h3 class="title">Czemu Patronix?</h3>
+		<p>Nasz zespół to grupa pasjonatów komputerów, oraz Patryka. <br> Elektroniką zajmujemy się od 
+            1969 roku. Do każdego zgłoszenia podchodzimy z troską, profesjonalizmem i miłością. Te właśnie wartości 
+		zaszczepił w nas nasz wspaniały założyciel - Patryk Łakomy</p>
+
+
+		<hr>
+
+			<img src="../img/pati.jpg" alt="Patryk" style="border-radius: 100%;">
+			
+			<h3> <br><br><br> Patryk Łakomy - założyciel serwisu</h3>
+		
+	</section>
+
+	<section class="features">
+		<h3 class="title">Specjalności</h3>
+		<p>Nasz serwis jest bardzo specjalny a to są nasze specjalizacje</p>
+			<hr>
+
+		<ul class="grid">
+			<li>
+				<img src="../img/computer.png" alt="komputer" style="width: 100px;">
+				<h4>Naprawa komputerów stacjonarnych</h4>
+				</li>
+			<li>
+				<img src="../img/laptop.png" alt="laptop" style="width: 100px;">
+				<h4>Naprawa laptopów</h4>
+			</li>
+			<li>
+				<img src="../img/smartphone.png" alt="smartphone" style="width: 100px;">
+				<h4>Naprawa smartphonów</h4>
+			</li>
+		</div>
+	</section>
+	
+
+	
+	<footer>
+		<a href="https://zs.poniatowa.pl/" target="_blank">
+		<p>ZETA ©</p></a>
+	</footer>
+
 </body>
+
 </html>
